@@ -23,7 +23,7 @@ jobs:
         id: get_latest_release
         with:
           query: |
-            query release($owner:String!,$repo:String!) {
+            query release($owner:String!,$repo:String!,isLatest:true) {
               repository(owner:$owner,name:$repo) {
                 releases(first:1) {
                   nodes {
