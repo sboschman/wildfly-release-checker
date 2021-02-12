@@ -25,7 +25,7 @@ jobs:
           query: |
             query release($owner:String!,$repo:String!) {
               repository(owner:$owner,name:$repo) {
-                releases(first:1, isLatest:true) {
+                releases(first:1) {
                   nodes {
                     name
                     createdAt
