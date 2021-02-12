@@ -29,7 +29,7 @@ jobs:
                   nodes {
                     name
                     createdAt
-                    published_at
+                    publishedAt
                     tagName
                   }
                 }
